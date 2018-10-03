@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 158d2bdc50b530b4e9ab993d9f8944fd
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Cylinder001
+    100008: //RootNode
+    100010: Segment1
+    100012: Segment10
+    100014: Segment11
+    100016: Segment12
+    100018: Segment2
+    100020: Segment3
+    100022: Segment4
+    100024: Segment5
+    100026: Segment6
+    100028: Segment8
+    100030: Segment9
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Cylinder001
+    400008: //RootNode
+    400010: Segment1
+    400012: Segment10
+    400014: Segment11
+    400016: Segment12
+    400018: Segment2
+    400020: Segment3
+    400022: Segment4
+    400024: Segment5
+    400026: Segment6
+    400028: Segment8
+    400030: Segment9
+    2100000: No Name
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Cylinder001
+    2300008: Segment1
+    2300010: Segment10
+    2300012: Segment11
+    2300014: Segment12
+    2300016: Segment2
+    2300018: Segment3
+    2300020: Segment4
+    2300022: Segment5
+    2300024: Segment6
+    2300026: Segment8
+    2300028: Segment9
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Cylinder001
+    3300008: Segment1
+    3300010: Segment10
+    3300012: Segment11
+    3300014: Segment12
+    3300016: Segment2
+    3300018: Segment3
+    3300020: Segment4
+    3300022: Segment5
+    3300024: Segment6
+    3300026: Segment8
+    3300028: Segment9
+    4300000: Box001
+    4300002: Box002
+    4300004: Segment1
+    4300006: Segment2
+    4300008: Segment3
+    4300010: Segment4
+    4300012: Segment5
+    4300014: Segment6
+    4300016: Segment8
+    4300018: Segment9
+    4300020: Segment10
+    4300022: Segment11
+    4300024: Segment12
+    4300026: Cylinder001
+    4300028: Box003
+    6400000: Box001
+    6400002: Box002
+    6400004: Box003
+    6400006: Cylinder001
+    6400008: Segment1
+    6400010: Segment10
+    6400012: Segment11
+    6400014: Segment12
+    6400016: Segment2
+    6400018: Segment3
+    6400020: Segment4
+    6400022: Segment5
+    6400024: Segment6
+    6400026: Segment8
+    6400028: Segment9
+    7400000: OpenAnimation
+    7400002: MovementAnimation
+    7400004: CloseAnimation
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: OpenAnimation
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MovementAnimation
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CloseAnimation
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
