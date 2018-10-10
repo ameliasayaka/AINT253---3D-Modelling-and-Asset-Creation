@@ -7,7 +7,12 @@ public class AnimationControllerScript : MonoBehaviour {
     public bool hasPlayerOpened;
     public bool isAlreadyOpen;
     private bool playerInRange;
+    private Transform playerTransform;
+    private Rigidbody playerRigidbody;
     private Animator monsterDoorAnimation;
+
+    [SerializeField]
+    private float force = 3.0f;
 
     
 
@@ -17,9 +22,11 @@ public class AnimationControllerScript : MonoBehaviour {
         isAlreadyOpen = false;
         playerInRange = false;
         monsterDoorAnimation = GetComponent<Animator>();
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        playerRigidbody = playerTransform.GetComponent<Rigidbody>();
 	}
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
 
         playerInRange = true;
@@ -37,6 +44,8 @@ public class AnimationControllerScript : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                playerRigidbody.AddForce(-playerTransform.forward * force, ForceMode.Impulse);
+                hasPlayerOpened = true;
                 monsterDoorAnimation.SetBool("hasPlayerOpened", hasPlayerOpened);
                 isAlreadyOpen = true;
             }

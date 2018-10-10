@@ -388,6 +388,10 @@ Prefab:
       propertyPath: m_Center.z
       value: 1.0843837e-10
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
   m_IsPrefabParent: 0
@@ -408,6 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPlayerOpened: 0
   isAlreadyOpen: 0
+  force: 3
 --- !u!65 &1140839867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -418,8 +423,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 1.55, z: 0.7}
-  m_Center: {x: 0.06, y: 0.74, z: -0.72}
+  m_Size: {x: 0.57, y: 1.55, z: 0.7}
+  m_Center: {x: 0.39, y: 0.74, z: -0.5}
 --- !u!1001 &1379228498
 Prefab:
   m_ObjectHideFlags: 0
