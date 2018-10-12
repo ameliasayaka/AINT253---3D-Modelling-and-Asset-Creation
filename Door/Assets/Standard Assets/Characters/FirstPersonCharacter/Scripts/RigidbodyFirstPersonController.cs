@@ -8,6 +8,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (CapsuleCollider))]
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
+
+        //sound
+        private AudioSource playerWalkSound;
+        private bool isPlayingAudio;
+        [SerializeField]
+        private AudioClip tatamiWalk;
+        private AudioClip meatWalk;
+
+
         [Serializable]
         public class MovementSettings
         {
@@ -19,6 +28,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             public float JumpForce = 30f;
             public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
             [HideInInspector] public float CurrentTargetSpeed = 8f;
+
+  
 
 #if !MOBILE_INPUT
             private bool m_Running;
@@ -90,6 +101,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jump, m_PreviouslyGrounded, m_Jumping, m_IsGrounded;
 
 
+
         public Vector3 Velocity
         {
             get { return m_RigidBody.velocity; }
@@ -123,6 +135,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
+
+            playerWalkSound = GetComponent<AudioSource>();
+            isPlayingAudio = false;
         }
 
 
@@ -156,6 +171,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     m_RigidBody.AddForce(desiredMove*SlopeMultiplier(), ForceMode.Impulse);
                 }
+
+                if (!isPlayingAudio)
+                {
+                    playerWalkSound.Play();
+                    isPlayingAudio = true;
+                }
+                
+            }
+            else
+            {
+                playerWalkSound.Pause();
+                isPlayingAudio = false;
             }
 
             if (m_IsGrounded)

@@ -11,6 +11,8 @@ public class AnimationControllerScript : MonoBehaviour {
     private Rigidbody playerRigidbody;
     private Animator monsterDoorAnimation;
 
+    private AudioSource doorSquelchSound;
+
     [SerializeField]
     private float force = 3.0f;
 
@@ -21,6 +23,7 @@ public class AnimationControllerScript : MonoBehaviour {
         hasPlayerOpened = false;
         isAlreadyOpen = false;
         playerInRange = false;
+        doorSquelchSound = GetComponent<AudioSource>();
         monsterDoorAnimation = GetComponent<Animator>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         playerRigidbody = playerTransform.GetComponent<Rigidbody>();
@@ -44,10 +47,12 @@ public class AnimationControllerScript : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                playerRigidbody.AddForce(-playerTransform.forward * force, ForceMode.Impulse);
+                
                 hasPlayerOpened = true;
                 monsterDoorAnimation.SetBool("hasPlayerOpened", hasPlayerOpened);
                 isAlreadyOpen = true;
+                doorSquelchSound.Play();
+                playerRigidbody.AddForce(-playerTransform.forward * force, ForceMode.Impulse);
             }
  
         }
