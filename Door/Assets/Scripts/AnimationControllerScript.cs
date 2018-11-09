@@ -13,8 +13,7 @@ public class AnimationControllerScript : MonoBehaviour {
 
     private AudioSource doorSquelchSound;
 
-    [SerializeField]
-    private float force = 3.0f;
+    
 
     
 
@@ -39,6 +38,7 @@ public class AnimationControllerScript : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
         playerInRange = false;
+        
     }
 
     // Update is called once per frame
@@ -52,7 +52,7 @@ public class AnimationControllerScript : MonoBehaviour {
                 monsterDoorAnimation.SetBool("hasPlayerOpened", hasPlayerOpened);
                 isAlreadyOpen = true;
                 doorSquelchSound.Play();
-                playerRigidbody.AddForce(-playerTransform.forward * force, ForceMode.Impulse);
+                
             }
  
         }

@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: a25b1108a76a95f4d86d782e00b9e025
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Cylinder001
+    100008: Cylinder002
+    100010: //RootNode
+    100012: Plane001
+    100014: Plane002
+    100016: Segment1
+    100018: Segment10
+    100020: Segment11
+    100022: Segment12
+    100024: Segment2
+    100026: Segment3
+    100028: Segment4
+    100030: Segment5
+    100032: Segment6
+    100034: Segment8
+    100036: Segment9
+    100038: Tube001
+    100040: Wall002
+    100042: Wall003
+    100044: Wall004
+    100046: Wall005
+    100048: Wall006
+    100050: Wall007
+    100052: Wall008
+    100054: Wall009
+    100056: Wall01
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Cylinder001
+    400008: Cylinder002
+    400010: //RootNode
+    400012: Plane001
+    400014: Plane002
+    400016: Segment1
+    400018: Segment10
+    400020: Segment11
+    400022: Segment12
+    400024: Segment2
+    400026: Segment3
+    400028: Segment4
+    400030: Segment5
+    400032: Segment6
+    400034: Segment8
+    400036: Segment9
+    400038: Tube001
+    400040: Wall002
+    400042: Wall003
+    400044: Wall004
+    400046: Wall005
+    400048: Wall006
+    400050: Wall007
+    400052: Wall008
+    400054: Wall009
+    400056: Wall01
+    2100000: 'Material #958'
+    2100002: 'Material #37'
+    2100004: 'Material #998'
+    2100006: 'Material #36'
+    2100008: 'Material #327'
+    2100010: 'Material #997'
+    2100012: 'Material #981'
+    2100014: 'Material #982'
+    2100016: 'Material #983'
+    2100018: 'Material #984'
+    2100020: 'Material #988'
+    2100022: 'Material #989'
+    2100024: 'Material #990'
+    2100026: 'Material #991'
+    2100028: 'Material #993'
+    2100030: 'Material #985'
+    2100032: 'Material #957'
+    2100034: 'Material #968'
+    2100036: 'Material #961'
+    2100038: 'Material #963'
+    2100040: 'Material #965'
+    2100042: 'Material #1000'
+    2100044: 'Material #956'
+    2100046: 'Material #966'
+    2100048: 'Material #955'
+    2100050: 'Material #964'
+    2100052: 'Material #1001'
+    2100054: 'Material #999'
+    2100056: No Name
+    2100058: 'Material #994'
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Cylinder001
+    2300008: Cylinder002
+    2300010: Plane001
+    2300012: Plane002
+    2300014: Segment1
+    2300016: Segment10
+    2300018: Segment11
+    2300020: Segment12
+    2300022: Segment2
+    2300024: Segment3
+    2300026: Segment4
+    2300028: Segment5
+    2300030: Segment6
+    2300032: Segment8
+    2300034: Segment9
+    2300036: Tube001
+    2300038: Wall002
+    2300040: Wall003
+    2300042: Wall004
+    2300044: Wall005
+    2300046: Wall006
+    2300048: Wall007
+    2300050: Wall008
+    2300052: Wall009
+    2300054: Wall01
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Cylinder001
+    3300008: Cylinder002
+    3300010: Plane001
+    3300012: Plane002
+    3300014: Segment1
+    3300016: Segment10
+    3300018: Segment11
+    3300020: Segment12
+    3300022: Segment2
+    3300024: Segment3
+    3300026: Segment4
+    3300028: Segment5
+    3300030: Segment6
+    3300032: Segment8
+    3300034: Segment9
+    3300036: Tube001
+    3300038: Wall002
+    3300040: Wall003
+    3300042: Wall004
+    3300044: Wall005
+    3300046: Wall006
+    3300048: Wall007
+    3300050: Wall008
+    3300052: Wall009
+    3300054: Wall01
+    4300000: Box001
+    4300002: Box002
+    4300004: Segment1
+    4300006: Segment2
+    4300008: Segment3
+    4300010: Segment4
+    4300012: Segment5
+    4300014: Segment6
+    4300016: Segment8
+    4300018: Segment9
+    4300020: Segment10
+    4300022: Segment11
+    4300024: Segment12
+    4300026: Cylinder001
+    4300028: Wall01
+    4300030: Wall002
+    4300032: Wall003
+    4300034: Wall004
+    4300036: Wall005
+    4300038: Box003
+    4300040: Wall006
+    4300042: Wall007
+    4300044: Wall008
+    4300046: Wall009
+    4300048: Plane001
+    4300050: Cylinder002
+    4300052: Plane002
+    4300054: Tube001
+    6400000: Box001
+    6400002: Box002
+    6400004: Box003
+    6400006: Cylinder001
+    6400008: Cylinder002
+    6400010: Plane001
+    6400012: Plane002
+    6400014: Segment1
+    6400016: Segment10
+    6400018: Segment11
+    6400020: Segment12
+    6400022: Segment2
+    6400024: Segment3
+    6400026: Segment4
+    6400028: Segment5
+    6400030: Segment6
+    6400032: Segment8
+    6400034: Segment9
+    6400036: Tube001
+    6400038: Wall002
+    6400040: Wall003
+    6400042: Wall004
+    6400044: Wall005
+    6400046: Wall006
+    6400048: Wall007
+    6400050: Wall008
+    6400052: Wall009
+    6400054: Wall01
+    7400000: OpenAnimation
+    7400002: OpenIdleAnimation
+    7400004: CloseAnimation
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: OpenAnimation
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OpenIdleAnimation
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CloseAnimation
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
