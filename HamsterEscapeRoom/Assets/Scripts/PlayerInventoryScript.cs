@@ -8,7 +8,8 @@ public class PlayerInventoryScript : MonoBehaviour {
     private int stickCounter;
     private int ropeCounter;
     private bool ropeColleted;
-
+    private AudioSource bottleCrash;
+    
 
     public GameObject waterBottle;
 	// Use this for initialization
@@ -17,14 +18,16 @@ public class PlayerInventoryScript : MonoBehaviour {
         stickCounter = 0;
         ropeCounter = 0;
         ropeColleted = false;
-
+      
+       bottleCrash = waterBottle.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (ropeCounter == 2)
+		if (ropeCounter == 2 && !ropeColleted)
         {
             waterBottle.GetComponent<Rigidbody>().isKinematic = false;
+            bottleCrash.Play();
             ropeColleted = true;
         }
 	}

@@ -8,6 +8,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (CapsuleCollider))]
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
+
+        //audio
+        private AudioSource walkAudio;
+        private bool isPlayingAudio;
+
         [Serializable]
         public class MovementSettings
         {
@@ -123,6 +128,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
+
+            //initialise audio
+            walkAudio = GetComponent<AudioSource>();
+            isPlayingAudio = false;
         }
 
 
@@ -155,6 +164,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     (movementSettings.CurrentTargetSpeed*movementSettings.CurrentTargetSpeed))
                 {
                     m_RigidBody.AddForce(desiredMove*SlopeMultiplier(), ForceMode.Impulse);
+                }
+                if (!isPlayingAudio)
+                {
+                    walkAudio.Play();
+                    isPlayingAudio = true;
+                }
+                else
+                {
+                    walkAudio.Pause();
+                    isPlayingAudio = false;
                 }
             }
 

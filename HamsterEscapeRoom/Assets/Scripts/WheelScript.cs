@@ -5,16 +5,20 @@ using UnityEngine;
 public class WheelScript : MonoBehaviour {
     private PlayerInventoryScript player;
     private bool isInRange;
-    private bool stringAttached;
+
     private Animator animator;
+    private AudioSource wheelAudio;
+
     public GameObject interactCanvas;
     public GameObject door;
 
+    private AudioSource doorNoise;
     private Animator doorAnimator;
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventoryScript>();
-        stringAttached = false;
+        wheelAudio = GetComponent<AudioSource>();
+        doorNoise = door.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
         doorAnimator = door.GetComponent<Animator>();
 	}
@@ -25,6 +29,8 @@ public class WheelScript : MonoBehaviour {
         {
             interactCanvas.SetActive(false);
             animator.SetBool("isSpin", true);
+            wheelAudio.Play();
+            doorNoise.Play();
             doorAnimator.SetBool("isDoorOpen", true);
 
         }

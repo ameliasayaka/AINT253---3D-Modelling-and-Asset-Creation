@@ -7,6 +7,7 @@ public class HamsterScript : MonoBehaviour {
     public GameObject hamsterCanvas;
     private PlayerInventoryScript playerScript;
     private Animator hamsterAnimator;
+    private AudioSource hamsterSqueakAudio;
    
 
     private bool isInRange;
@@ -18,6 +19,7 @@ public class HamsterScript : MonoBehaviour {
         isFed = false;
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventoryScript>();
         hamsterAnimator = GetComponent<Animator>();
+        hamsterSqueakAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class HamsterScript : MonoBehaviour {
                 interactCanvas.SetActive(true);
                 hamsterCanvas.SetActive(true);
                 isInRange = true;
+                hamsterSqueakAudio.Play();
             }
         }
     }
